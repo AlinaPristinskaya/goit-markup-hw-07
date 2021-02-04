@@ -1,0 +1,135 @@
+.flexheadr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-right: 93px;
+  color: var(--accent);
+
+  font-family: raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+  }
+}
+.black {
+  color: var(--black);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+
+  & .current {
+    color: var(--accent);
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      content: "";
+      height: 4px;
+      left: 0px;
+      background-color: var(--accent);
+      border-radius: 2px;
+    }
+  }
+
+  & .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+  }
+}
+.site-nav .item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.telmailto {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    fill: var(--accent);
+  }
+}
+.envelope {
+  margin-right: 10px;
+  background-size: contain;
+}
+
+.smartphone::before {
+  content: "";
+  background-image: url(../icon/smartphone.svg);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+}
+.aboutusorder {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.item {
+  display: inline-flex;
+}
+
+.itemsvg {
+  fill: currentColor;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+  }
+}
