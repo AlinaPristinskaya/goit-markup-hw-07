@@ -35,17 +35,18 @@
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  &:hover .imgportp,
+  &:focus .imgportp {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 .flex-elem:hover,
 .flex-elem:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.imgport:hover .imgportp,
-.imgport:focus .imgportp {
-  transform: translateY(0%);
-  opacity: 1;
-}
+
 .footersubscription {
   padding-top: 12px;
 }
@@ -134,10 +135,11 @@
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  .butclose .clos:hover {
+    fill: var(--accent);
+  }
 }
-.butclose .clos:hover {
-  fill: var(--accent);
-}
+
 .modalzag {
   font-family: Roboto;
   font-style: normal;
