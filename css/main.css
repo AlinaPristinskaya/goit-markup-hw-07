@@ -1033,7 +1033,7 @@ ul.section-discription {
           transition-duration: 250ms;
 }
 
-.clos .butclose .clos:hover {
+.butclose .clos:hover {
   fill: var(--accent);
 }
 
