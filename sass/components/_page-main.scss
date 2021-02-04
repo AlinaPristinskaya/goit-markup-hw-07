@@ -107,16 +107,16 @@
   background-color: var(--secondary-bgcolor);
   margin-bottom: 30px;
 }
-
-.scenery::before:nth-child(2)::before {
+.scenery:nth-child(2)::before {
   background-image: url(../image/clock.svg);
 }
-.scenery::before:nth-child(3)::before {
+.scenery:nth-child(3)::before {
   background-image: url(../image/diagram.svg);
 }
-.scenery::before:nth-child(4)::before {
+.scenery:nth-child(4)::before {
   background-image: url(../image/astronaut.svg);
 }
+
 ul.site-nav.list.flex-container {
   padding-inline-start: 0px;
 }
@@ -220,7 +220,9 @@ ul.section-discription {
 .site-nav .piople:last-child {
   margin-right: 0px;
 }
-
+.site-nav {
+  justify-content: space-between;
+}
 .socseti {
   display: flex;
   list-style: none;
